@@ -587,7 +587,7 @@ img {
 
 /* third-footer */
 .third-footer {
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .footer-mail {
@@ -618,6 +618,11 @@ img {
 }
 
 .button-send {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
     width: 200px;
     height: 50px;
 
@@ -628,9 +633,7 @@ img {
 
     margin-left: 12px;
     
-    display: flex;
-        align-items: center;
-        text-align: center;
+    
     letter-spacing: 0.06em;
     
     color: var(--primary-white-color);
@@ -640,16 +643,11 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 
-    position: relative;
+  
 
 }
-
-.send-icon {
-    position: absolute;
-    right: 7%;
-}
-
 
 
 .all-link {
@@ -971,12 +969,16 @@ img {
 
 }
 .form-field {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 
 }
-
+.form-field-comment {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
 /* input */
 .contact-form-field {
     height: 40px;
@@ -1020,7 +1022,7 @@ img {
     position: absolute;
     left: 55px;
 
-    transform: translateY(32px);
+    transform: translateY(30px);
     fill: var(--primary-text-color);
     transition: fill var(--anim);
 }
